@@ -1,0 +1,870 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ceye.io配置 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vulcat-config-dnslog-pw.html" />
+    
+    
+    <link rel="prev" href="vulcat-config-language.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    vulcat简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../TEACHING.html">
+            
+                <a href="../TEACHING.html">
+            
+                    
+                    vulcat教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../download/vulcat-download.html">
+            
+                <a href="../download/vulcat-download.html">
+            
+                    
+                    下载和安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="CONFIG.html">
+            
+                <a href="CONFIG.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="vulcat-config-language.html">
+            
+                <a href="vulcat-config-language.html">
+            
+                    
+                    语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2" data-path="vulcat-config-ceye.html">
+            
+                <a href="vulcat-config-ceye.html">
+            
+                    
+                    ceye.io配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="vulcat-config-dnslog-pw.html">
+            
+                <a href="vulcat-config-dnslog-pw.html">
+            
+                    
+                    dnslog.pw配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="vulcat-config-headers.html">
+            
+                <a href="vulcat-config-headers.html">
+            
+                    
+                    默认Request Header
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="vulcat-config-payloads-path.html">
+            
+                <a href="vulcat-config-payloads-path.html">
+            
+                    
+                    配置攻击载荷路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../run/RUN.html">
+            
+                <a href="../run/RUN.html">
+            
+                    
+                    运行扫描
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../run/vulcat-run-base.html">
+            
+                <a href="../run/vulcat-run-base.html">
+            
+                    
+                    基本参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../run/vulcat-run-target.html">
+            
+                <a href="../run/vulcat-run-target.html">
+            
+                    
+                    指定目标站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../run/vulcat-run-output.html">
+            
+                <a href="../run/vulcat-run-output.html">
+            
+                    
+                    导出报告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../run/vulcat-run-aux.html">
+            
+                <a href="../run/vulcat-run-aux.html">
+            
+                    
+                    辅助参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../run/vulcat-run-proxy.html">
+            
+                <a href="../run/vulcat-run-proxy.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../run/vulcat-run-log.html">
+            
+                <a href="../run/vulcat-run-log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../run/vulcat-run-app.html">
+            
+                <a href="../run/vulcat-run-app.html">
+            
+                    
+                    指定攻击载荷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../run/vulcat-run-shell.html">
+            
+                <a href="../run/vulcat-run-shell.html">
+            
+                    
+                    Shell交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../run/vulcat-run-dnslog.html">
+            
+                <a href="../run/vulcat-run-dnslog.html">
+            
+                    
+                    DNSLOG平台指定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../custom-payload/vulcat-custom-payloads.html">
+            
+                <a href="../custom-payload/vulcat-custom-payloads.html">
+            
+                    
+                    自定义POC / EXP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../custom-payload/vulcat-custom-payload-fileread.html">
+            
+                <a href="../custom-payload/vulcat-custom-payload-fileread.html">
+            
+                    
+                    POC编写示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../custom-payload/vulcat-custom-payloads-exp.html">
+            
+                <a href="../custom-payload/vulcat-custom-payloads-exp.html">
+            
+                    
+                    EXP编写示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">漏洞库</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../vulns/alibaba-druid/alibaba-druid-unauth.html">
+            
+                <a href="../../vulns/alibaba-druid/alibaba-druid-unauth.html">
+            
+                    
+                    AliBaba-Druid
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../vulns/alibaba-druid/alibaba-druid-unauth.html">
+            
+                <a href="../../vulns/alibaba-druid/alibaba-druid-unauth.html">
+            
+                    
+                    💛 Druid 未授权访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../vulns/alibaba-nacos/alibaba-nacos-cve-2021-29441.html">
+            
+                <a href="../../vulns/alibaba-nacos/alibaba-nacos-cve-2021-29441.html">
+            
+                    
+                    AliBaba-Nacos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../vulns/alibaba-nacos/alibaba-nacos-cve-2021-29441.html">
+            
+                <a href="../../vulns/alibaba-nacos/alibaba-nacos-cve-2021-29441.html">
+            
+                    
+                    💛 Nacos CVE-2021-29441
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../vulns/apache-airflow/airflow-cve-2020-17526.html">
+            
+                <a href="../../vulns/apache-airflow/airflow-cve-2020-17526.html">
+            
+                    
+                    Apache Airflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../vulns/apache-airflow/airflow-cve-2020-17526.html">
+            
+                <a href="../../vulns/apache-airflow/airflow-cve-2020-17526.html">
+            
+                    
+                    💛 CVE-2020-17526
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../vulns/gocd/gocd-cve-2021-43287.html">
+            
+                <a href="../../vulns/gocd/gocd-cve-2021-43287.html">
+            
+                    
+                    GoCD
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../vulns/gocd/gocd-cve-2021-43287.html">
+            
+                <a href="../../vulns/gocd/gocd-cve-2021-43287.html">
+            
+                    
+                    🧡 CVE-2021-43287
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../vulns/jboss/jboss-unauth.html">
+            
+                <a href="../../vulns/jboss/jboss-unauth.html">
+            
+                    
+                    JBoss
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../vulns/jboss/jboss-unauth.html">
+            
+                <a href="../../vulns/jboss/jboss-unauth.html">
+            
+                    
+                    💛 JBoss未授权访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../vulns/jenkins/jenkins-unauth.html">
+            
+                <a href="../../vulns/jenkins/jenkins-unauth.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../../vulns/jenkins/jenkins-unauth.html">
+            
+                <a href="../../vulns/jenkins/jenkins-unauth.html">
+            
+                    
+                    🧡 Jenkins未授权访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../vulns/joomla/joomla-cve-2023-23752.html">
+            
+                <a href="../../vulns/joomla/joomla-cve-2023-23752.html">
+            
+                    
+                    Joomla
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../../vulns/joomla/joomla-cve-2017-8917.html">
+            
+                <a href="../../vulns/joomla/joomla-cve-2017-8917.html">
+            
+                    
+                    💛 CVE-2017-8917
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../../vulns/joomla/joomla-cve-2023-23752.html">
+            
+                <a href="../../vulns/joomla/joomla-cve-2023-23752.html">
+            
+                    
+                    💛 CVE-2023-23752
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../vulns/thinkphp/thinkphp-cnvd-2018-24942.html">
+            
+                <a href="../../vulns/thinkphp/thinkphp-cnvd-2018-24942.html">
+            
+                    
+                    ThinkPHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../../vulns/thinkphp/thinkphp-cnvd-2018-24942.html">
+            
+                <a href="../../vulns/thinkphp/thinkphp-cnvd-2018-24942.html">
+            
+                    
+                    🧡 CNVD-2018-24942
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../vulns/weblogic/weblogic-cve-2021-2109.html">
+            
+                <a href="../../vulns/weblogic/weblogic-cve-2021-2109.html">
+            
+                    
+                    Weblogic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../../vulns/weblogic/weblogic-cve-2021-2109.html">
+            
+                <a href="../../vulns/weblogic/weblogic-cve-2021-2109.html">
+            
+                    
+                    💔 CVE-2021-2109
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ceye.io配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="dnslog&#x5E73;&#x53F0;ceyeio&#x652F;&#x6301;">DNSLOG&#x5E73;&#x53F0;ceye.io&#x652F;&#x6301;</h2>
+<p>ceye.io&#x662F;&#x4E00;&#x4E2A;DNSLOG&#x5E73;&#x53F0;&#xFF0C;&#x6CE8;&#x518C;&#x5373;&#x53EF;&#x83B7;&#x5F97;&#x4E13;&#x5C5E;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x7528;&#x4E8E;&#x8F85;&#x52A9;&#x65E0;&#x56DE;&#x663E;&#x6F0F;&#x6D1E;&#x7684;&#x9A8C;&#x8BC1;&#xFF0C;&#x5B98;&#x7F51;&#xFF1A;<a href="http://ceye.io/" target="_blank">http://ceye.io/</a></p>
+<p>vulcat&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;DNSLOG&#x5E73;&#x53F0;&#x662F;<a href="http://www.dnslog.cn/" target="_blank">http://www.dnslog.cn/</a></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;ceye.io&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5728;&#x5B98;&#x7F51;&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#xFF0C;&#x5728;&#x4F60;&#x7684;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#x83B7;&#x5F97;&#x4E13;&#x5C5E;&#x7684; &#x57DF;&#x540D;&#x548C;Token</p>
+<figure><img src="https://cdn.staticaly.com/gh/clincat/blog-imgs@main/hub/static/imgs/config/add_ceye_01.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://cdn.staticaly.com/gh/clincat/blog-imgs@main/hub/static/imgs/config/add_ceye_02.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://cdn.staticaly.com/gh/clincat/blog-imgs@main/hub/static/imgs/config/config_05.png" alt=""><figcaption></figcaption></figure>
+
+<p>&#x7136;&#x540E;&#x5C06;&#x4F60;&#x7684; &#x57DF;&#x540D;&#x548C;Token &#x586B;&#x5199;&#x5230;config.yaml&#x5BF9;&#x5E94;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x5373;&#x53EF;</p>
+<figure><img src="https://cdn.staticaly.com/gh/clincat/blog-imgs@main/hub/static/imgs/config/config_06.png" alt=""><figcaption></figcaption></figure>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vulcat-config-language.html" class="navigation navigation-prev " aria-label="Previous page: 语言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vulcat-config-dnslog-pw.html" class="navigation navigation-next " aria-label="Next page: dnslog.pw配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ceye.io配置","level":"1.2.2.2","depth":3,"next":{"title":"dnslog.pw配置","level":"1.2.2.3","depth":3,"path":"teaching/config/vulcat-config-dnslog-pw.md","ref":"teaching/config/vulcat-config-dnslog-pw.md","articles":[]},"previous":{"title":"语言","level":"1.2.2.1","depth":3,"path":"teaching/config/vulcat-config-language.md","ref":"teaching/config/vulcat-config-language.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","intopic-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"teaching/config/vulcat-config-ceye.md","mtime":"2023-09-21T11:02:27.661Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T11:03:07.658Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
